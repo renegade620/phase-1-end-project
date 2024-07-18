@@ -1,16 +1,23 @@
+/* GENERAL STYLE */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 20px; 
-    line-height: 1.5;
+    line-height: 1.5; /* adjusts the height of the line*/
 }
-  
+
+main {
+    padding: 20px;
+}
+ 
+/* HEADER STYLES */
 header {
     background-color: #ffffff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* to achieve the gaps between logo, title and nav */
     align-items: center;
 }
   
@@ -41,16 +48,9 @@ nav a {
     font-family: sans-serif;
 }
   
-main {
-    padding: 20px;
-}
-  
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-}
-  
+/* END OF HEADER STYLES */
+
+/* SECTION ONE STYLES */
 .container {
     display: flex;
     justify-content: space-between;
@@ -92,6 +92,7 @@ footer {
     border-radius: 10px; 
 }
 
+/* SECTION TWO STYLES */
 #magic-arena {
     background-color: #f9f9f9;
     padding: 40px 0;
@@ -112,6 +113,7 @@ footer {
     text-align: center;
 }
 
+/* FORM STYLES */ 
 .form-group {
     margin-bottom: 20px;
 }
@@ -158,3 +160,10 @@ footer {
     border-radius: 4px;
     background-color: #f0f8ff;
 }
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+  

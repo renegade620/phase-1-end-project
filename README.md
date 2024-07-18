@@ -37,5 +37,11 @@ The app uses the following API endpoints:
 - GET /diseases - returns a list of all diseases
 - GET /diseases/:id - returns details for a specific disease
 
+# DEMO
+Landing Page
+![alt text](resources/image.png)
+Where the Magic Happens
+
+
 ## License
 This project is licensed under the APACHE License.

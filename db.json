@@ -1,6 +1,154 @@
 {
-    "headache": ["migraine", "tension headache", "sinus infection"],
-    "fever": ["common cold", "flu", "typhoid"],
-    "cough": ["common cold", "flu", "asthma"]
+    "diseases": [
+      {
+        "id": 1,
+        "name": "Common Cold",
+        "symptoms": ["runny nose", "cough", "sneezing", "sore throat"]
+      },
+      {
+        "id": 2,
+        "name": "Flu",
+        "symptoms": ["fever", "body aches", "headache", "fatigue"]
+      },
+      {
+        "id": 3,
+        "name": "Allergy",
+        "symptoms": ["sneezing", "itchy eyes", "runny nose", "congestion"]
+      },
+      {
+        "id": 4,
+        "name": "Asthma",
+        "symptoms": ["wheezing", "shortness of breath", "chest tightness", "cough"]
+      },
+      {
+        "id": 5,
+        "name": "Migraine",
+        "symptoms": ["headache", "nausea", "vomiting", "sensitivity to light"]
+      },
+      {
+        "id": 6,
+        "name": "Depression",
+        "symptoms": ["sadness", "loss of interest", "fatigue", "changes in appetite"]
+      },
+      {
+        "id": 7,
+        "name": "Anxiety",
+        "symptoms": ["nervousness", "restlessness", "irritability", "difficulty concentrating"]
+      },
+      {
+        "id": 8,
+        "name": "Diabetes",
+        "symptoms": ["increased thirst", "frequent urination", "fatigue", "blurred vision"]
+      },
+      {
+        "id": 9,
+        "name": "Hypertension",
+        "symptoms": ["headache", "dizziness", "shortness of breath", "nosebleeds"]
+      },
+      {
+        "id": 10,
+        "name": "Heart Disease",
+        "symptoms": ["chest pain, shortness of breath, fatigue, swelling in ankles"]
+      },
+      {
+        "id": 11,
+        "name": "Arthritis",
+        "symptoms": ["joint pain", "stiffness", "swelling", "reduced range of motion"]
+      },
+      {
+        "id": 12,
+        "name": "Skin Infection",
+        "symptoms": ["redness", "swelling", "pain", "pus"]
+      },
+      {
+        "id": 13,
+        "name": "Food Poisoning",
+        "symptoms": ["nausea", "vomiting", "diarrhea", "abdominal cramps"]
+      },
+      {
+        "id": 14,
+        "name": "Constipation",
+        "symptoms": ["hard stools", "infrequent bowel movements", "abdominal pain"]
+      },
+      {
+        "id": 15,
+        "name": "Urinary Tract Infection",
+        "symptoms": ["burning sensation when urinating", "frequent urination", "cloudy urine"]
+      },
+      {
+        "id": 16,
+        "name": "Pneumonia",
+        "symptoms": ["cough", "fever", "chills", "shortness of breath"]
+      },
+      {
+        "id": 17,
+        "name": "Bronchitis",
+        "symptoms": ["cough", "mucus production", "chest congestion", "wheezing"]
+      },
+      {
+        "id": 18,
+        "name": "Sinusitis",
+        "symptoms": ["facial pain", "nasal congestion", "headache", "fever"]
+      },
+      {
+        "id": 19,
+        "name": "Stomach Ulcer",
+        "symptoms": ["abdominal pain", "heartburn", "nausea", "vomiting"]
+      },
+      {
+        "id": 20,
+        "name": "Kidney Stones",
+        "symptoms": ["severe pain in the side or back", "blood in urine", "nausea"]
+      },
+      {
+        "id": 21,
+        "name": "Iron Deficiency Anemia",
+        "symptoms": ["fatigue", "weakness", "shortness of breath", "pale skin"]
+      },
+      {
+        "id": 22,
+        "name": "Thyroid Disorders",
+        "symptoms": ["fatigue", "weight changes", "cold intolerance", "hair loss"]
+      },
+      {
+        "id": 23,
+        "name": "Osteoporosis",
+        "symptoms": ["back pain", "loss of height", "stooped posture", "bone fractures"]
+      },
+      {
+        "id": 24,
+        "name": "Glaucoma",
+        "symptoms": ["tunnel vision", "loss of peripheral vision", "eye pain"]
+      },
+      {
+        "id": 25,
+        "name": "Diabetes Insipidus",
+        "symptoms": ["excessive thirst", "frequent urination", "dehydration"]
+      },
+      {
+        "id": 26,
+        "name": "Epilepsy",
+        "symptoms": ["seizures", "loss of consciousness", "muscle spasms"]
+      },
+      {
+        "id": 27,
+        "name": "Migraine with Aura",
+        "symptoms": ["visual disturbances", "numbness", "tingling", "difficulty speaking"]
+      },
+      {
+        "id": 28,
+        "name": "Irritable Bowel Syndrome (IBS)",
+        "symptoms": ["abdominal pain", "bloating", "diarrhea", "constipation"]
+      },
+      {
+        "id": 29,
+        "name": "Psoriasis",
+        "symptoms": ["red", "scaly patches of skin", "itching"]
+      },
+      {
+        "id": 30,
+        "name": "Eczema",
+        "symptoms": ["dry, itchy skin", "red rashes"]
+      }
+    ]
   }
-  

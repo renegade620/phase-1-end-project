@@ -1,1 +1,160 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px; 
+    line-height: 1.5;
+}
+  
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo img {
+    width: 100px;
+    height: auto;
+    color: blue;
+}
+  
+#logo-name {
+    font-size: 36px; 
+    font-weight: bolder;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav li {
+    margin-right: 20px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #020202;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+  
+main {
+    padding: 20px;
+}
+  
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.banner-text {
+    text-align: center;
+    flex: 1;
+}
+  
+.banner-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+  
+.lead {
+    font-size: 18px;
+    color: #000000;
+}
+  
+.btn {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.banner-img {
+    flex: 0 0 50%;
+}
+  
+.banner-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
 
+#magic-arena {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container-1 {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container-1 h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+#checkButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#checkButton:hover {
+    background-color: #0056b3;
+}/* let's try this with an event listener? HOVER*/
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f8ff;
+}

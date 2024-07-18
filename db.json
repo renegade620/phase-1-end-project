@@ -1,1 +1,6 @@
-
+{
+    "headache": ["migraine", "tension headache", "sinus infection"],
+    "fever": ["common cold", "flu", "typhoid"],
+    "cough": ["common cold", "flu", "asthma"]
+  }
+  

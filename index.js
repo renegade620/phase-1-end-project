@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() { // fires up when page loads
+document.addEventListener("DOMContentLoaded", function() {
     alert("Page is ready!");
 
     let diseasesData = []; // array to store db contents
@@ -21,17 +21,54 @@ document.addEventListener("DOMContentLoaded", function() { // fires up when page
     document.getElementById("symptomForm").addEventListener("submit", function(event) {
         event.preventDefault(); // prevents submit's default which reloads the page
 
-        // accept inputs from the client side 
-        const age = document.getElementById("age").value;
-        const gender = document.querySelector("input[name='gender']:checked").value;
-        const county = document.getElementById("county").value;
-        const symptoms = document.getElementById("symptoms").value
-            .toLowerCase()
-            .split(",")
-            .map(s => s.trim());
+        if (validateForm()) {
+            // accept inputs from the client side 
+            const age = document.getElementById("age").value;
+            const gender = document.querySelector("input[name='gender']:checked").value;
+            const county = document.getElementById("county").value;
+            const symptoms = document.getElementById("symptoms").value
+                .toLowerCase()
+                .split(",")
+                .map(s => s.trim());
 
-        checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
+            checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
+        }
     });
+
+    // Form validation function
+    function validateForm() {
+        let isValid = true;
+
+        // age
+        const age = document.getElementById("age").value;
+        if (age === "" || isNaN(age) || age < 0 || age > 120) {
+            alert("Please enter a valid age between 0 and 120.");
+            isValid = false;
+        }
+
+        // gender
+        const gender = document.querySelector("input[name='gender']:checked");
+        if (!gender) {
+            alert("Please select a gender.");
+            isValid = false;
+        }
+
+        // county
+        const county = document.getElementById("county").value.trim();
+        if (county === "") {
+            alert("Please enter a county.");
+            isValid = false;
+        }
+
+        // symptom
+        const symptoms = document.getElementById("symptoms").value.trim();
+        if (symptoms === "") {
+            alert("Please enter at least one symptom.");
+            isValid = false;
+        }
+
+        return isValid;
+    }
 
     // a function that checks symptoms against diseases
     function checkSymptoms(age, gender, county, symptoms) {
@@ -54,11 +91,10 @@ document.addEventListener("DOMContentLoaded", function() { // fires up when page
         const resultDiv = document.getElementById("result");
         if (potentialDiseases.size > 0) {
             resultDiv.innerHTML = `
-            <p>Age: ${age}\n, Gender: ${gender}\n, County: ${county}\n</p>    
+            <p>Age: ${age}, Gender: ${gender}, County: ${county}</p>    
             <h3>Potential Conditions:</h3>
                 <ul>${Array.from(potentialDiseases).map(disease => `<li>${disease}</li>`).join("")}</ul>
-                <p><strong>Note:</strong> This is symptom checker has been built for educational purposes. Please consult a healthcare professional for accurate diagnosis.</p>
-                
+                <p><strong>Note:</strong> This symptom checker has been built for educational purposes. Please consult a healthcare professional for accurate diagnosis.</p>
             `; // populates the result's div
         } else {
             resultDiv.innerHTML = `

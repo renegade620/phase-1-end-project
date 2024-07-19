@@ -45,3 +45,7 @@ Where the Magic Happens
 
 ## License
 This project is licensed under the APACHE License.
+
+## Author
+Frankline Were
+franklinegift@gmail.com

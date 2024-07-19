@@ -2,73 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYM-CHECK</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYM-CHECK</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img id="logo" src="resources/logo.png" alt="Symptom Checker Logo" />
+  <header>
+    <div class="logo">
+      <img id="logo" src="resources/logo.png" alt="Symptom Checker Logo" />
+    </div>
+    <div>
+      <h1 id="logo-name">SYM-CHECK</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#magic-arena">Feature</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <div class="container flex">
+      <div class="banner-text">
+        <h1 class="banner-heading">A Medical Diagnosis System</h1>
+        <p class="lead">
+          With this application, your patient doesn't get impatient
+        </p>
+        <!-- ADD HOVER EVENT LISTENER -->
+        <a href="#magic-arena"><button id="signup-btn" class="btn btn-rounded">GET STARTED</button></a>
+      </div>
+      <div class="banner-img">
+        <img src="resources/medcare.jpg" alt="main-image" />
+      </div>
+    </div>
+  </main>
+  <section id="magic-arena">
+    <div class="container-1">
+      <h1>Symptom Checker</h1>
+      <form id="symptomForm">
+        <div class="form-group">
+          <label for="age">What is your age?</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" required>
         </div>
-        <div>
-            <h1 id="logo-name">SYM-CHECK</h1>
+        <div class="form-group">
+          <label>Sex:</label>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#magic-arena">Feature</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="home">
-        <div class="container flex">
-            <div class="banner-text">
-                <h1 class="banner-heading">A Medical Diagnosis System</h1>
-                <p class="lead">
-                    With this application, your patient doesn't get impatient
-                </p>
-                <!-- ADD HOVER EVENT LISTENER -->
-                <a href="#magic-arena"><button id="signup-btn" class="btn btn-rounded">GET STARTED</button></a> 
-            </div>
-            <div class="banner-img">
-                <img src="resources/medcare.jpg" alt="main-image" />
-            </div>
+        <div class="form-group">
+          <label for="county">County:</label>
+          <input type="text" id="county" name="county" placeholder="Enter County of Residence or Recent Visit" required>
         </div>
-    </main>
-    <section id="magic-arena">
-        <div class="container-1">
-          <h1>Symptom Checker</h1>
-          <form id="symptomForm">
-            <div class="form-group">
-              <label for="age">What is your age?</label>
-              <input type="number" id="age" name="age" placeholder="Enter your age" required>
-            </div>
-            <div class="form-group">
-                <label>Sex:</label>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
-              </div>
-            <div class="form-group">
-              <label for="county">County:</label>
-              <input type="text" id="county" name="county" placeholder="Enter County of Residence or Recent Visit" required>
-            </div>
-            <div class="form-group">
-              <label for="symptoms">Symptoms:</label>
-              <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms separated by commas">
-            </div>
-            <button type="submit" id="checkButton">Check Symptoms</button>
-          </form>
-          <div id="result"></div>
+        <div class="form-group">
+          <label for="symptoms">Symptoms:</label>
+          <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms separated by commas">
         </div>
-      </section>
-      
-    <footer></footer>
-    <script src="index.js"></script>
+        <button type="submit" id="checkButton">Check Symptoms</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <footer></footer>
+  <script src="index.js"></script>
+  <script>
+    const buttons = document.getElementsByTagName("button");
+
+    // add event listener to all buttons: on hover
+    Array.from(buttons).forEach(button => {
+      button.addEventListener("mouseover", function () {
+        this.style.backgroundColor = "#45a049"; // change button color on hover
+      });
+
+      button.addEventListener("mouseout", function () {
+        this.style.backgroundColor = ""; // reset button color
+      });
+    });
+
+
+  </script>
 </body>
 
 </html>

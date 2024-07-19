@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { // fires up when page loads
+    alert("Page is ready!");
+
     let diseasesData = []; // array to store db contents
 
     // fetch and display diseases

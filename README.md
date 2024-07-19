@@ -43,6 +43,8 @@ Landing Page
 Where the Magic Happens
 ![Check Symptoms Arena](resources/magic.png)
 
+To get a personal glimpse/touch - https://renegade620.github.io/phase-1-end-project/
+
 ## License
 This project is licensed under the APACHE License.
 

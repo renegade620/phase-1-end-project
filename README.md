@@ -41,7 +41,7 @@ The app uses the following API endpoints:
 Landing Page
 ![alt text](resources/image.png)
 Where the Magic Happens
-
+![alt text](resources/magic.png)
 
 ## License
 This project is licensed under the APACHE License.

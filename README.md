@@ -39,9 +39,9 @@ The app uses the following API endpoints:
 
 # DEMO
 Landing Page
-![alt text](resources/image.png)
+![Landing Page](resources/image.png)
 Where the Magic Happens
-![alt text](resources/magic.png)
+![Check Symptoms Arena](resources/magic.png)
 
 ## License
 This project is licensed under the APACHE License.

@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             console.log(data);
             diseasesData = data;
+            checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
         })
         .catch(error => console.error("Error fetching diseases:", error)); // logs error to the user
     }
@@ -30,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 .toLowerCase()
                 .split(",")
                 .map(s => s.trim());
-
-            checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
         }
     });
 

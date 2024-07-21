@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // fetch and display diseases
     function fetchDiseases() {
-        fetch("https://renegade620.github.io/phase-1-end-project/db.json") // url of json-server
+        fetch("https://raw.githubusercontent.com/renegade620/project-data/main/db.json") // url of json-server
         .then(response => response.json())
         .then(data => {
             console.log(data);

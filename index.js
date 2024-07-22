@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // fetch and display diseases
     function fetchDiseases() {
-        fetch("https://raw.githubusercontent.com/renegade620/project-data/main/db.json") // url of json-server
+       // fetch("https://raw.githubusercontent.com/renegade620/project-data/main/db.json") // url of json-server
+       fetch("http://localhost:3000/diseases")
         .then(response => response.json())
         .then(data => {
             console.log(data);
             diseasesData = data;
-            checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
         })
         .catch(error => console.error("Error fetching diseases:", error)); // logs error to the user
     }
@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 .toLowerCase()
                 .split(",")
                 .map(s => s.trim());
+
+                checkSymptoms(age, gender, county, symptoms); // invokes function that checks symptoms against diseases
         }
     });
 
@@ -68,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         return isValid;
     }
+
 
     // a function that checks symptoms against diseases
     function checkSymptoms(age, gender, county, symptoms) {

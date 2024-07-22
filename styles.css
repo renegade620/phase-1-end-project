@@ -165,6 +165,7 @@ footer {
     background-color: #007bff;
     padding: 20px;
     text-align: center;
+    line-height: 5.5;
 }
 
 .lead.about {

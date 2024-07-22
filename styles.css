@@ -162,8 +162,27 @@ nav a {
 }
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #007bff;
     padding: 20px;
     text-align: center;
 }
+
+.lead.about {
+    letter-spacing: 0.5px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 2.5;
+    margin: 100px;
+  }
+  
+  .lead.about2 {
+    letter-spacing: 0.5px;
+    color: #333;
+    text-align: right;
+    margin-bottom: 20px;
+    line-height: 2.5;
+    margin: 100px;
+  }
+
   
